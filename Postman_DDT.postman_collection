@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Postman_DDT",
+		"_postman_id": "474d7da0-04a2-5035-34fa-9d49f95b19d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample_DataDriverTest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/posts/{{postId}}",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Request to create a sample for data driven testing using postman"
+			},
+			"response": []
+		}
+	]
+}
